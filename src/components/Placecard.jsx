@@ -1,0 +1,19 @@
+// PlaceCard.js
+import React from 'react';
+
+const PlaceCard = ({ place }) => {
+  return (
+    <div className="bg-white rounded-lg shadow-md p-4 mb-4">
+      <img src={place.imageUrl} alt={place.title} className="w-full h-32 object-cover mb-2" />
+      <h3 className="text-lg font-semibold mb-1">{place.title}</h3>
+      <p className="text-gray-500 text-sm mb-1">{place.location}</p>
+      <p className="text-indigo-600 font-semibold mb-1">{place.rating} / 10</p>
+      <p className="text-gray-700 mb-2">Average Price: {place.price} per night</p>
+      <a href={place.bookingLink} target="_blank" rel="noopener noreferrer" className="text-indigo-600 hover:underline transition duration-300">
+        Book Now on Booking.com
+      </a>
+    </div>
+  );
+};
+
+export default PlaceCard;
