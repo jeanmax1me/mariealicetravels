@@ -2,6 +2,8 @@
 
 Welcome to Marie Alice Travels, a project that explores the Booking.com API and its affiliate program to showcase travel destinations and accommodations.
 
+![App Screenshot](public/logo2.png)
+
 ## Overview
 
 Marie Alice Travels is a web application that provides information about popular travel destinations and accommodations using data from Booking.com. The app demonstrates how to interact with the Booking.com API to fetch and display travel information.
