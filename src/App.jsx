@@ -1,8 +1,19 @@
-import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import MainSection from './components/MainSection';
 import Footer from './components/Footer';
+import PlaceCard from './components/PlaceCard';
+
+import antibesData from './destinations/antibes';
+import bordeauxData from './destinations/bordeaux';
+import cannesData from './destinations/cannes';
+import arcachonData from './destinations/arcachon';
+import chamonixData from './destinations/chamonix-mont-blanc';
+import lesMenuiresData from './destinations/les-menuires';
+import lyonData from './destinations/lyon';
+import marseilleData from './destinations/marseille';
+import niceData from './destinations/nice';
+import parisData from './destinations/paris';
 
 
 export default function App() {
@@ -10,7 +21,7 @@ export default function App() {
     "Antibes",
     "Bordeaux",
     "Cannes",
-    "Cap d'Agde",
+    "Arcachon",
     "Chamonix-Mont-Blanc",
     "Les Menuires",
     "Lyon",
@@ -19,6 +30,24 @@ export default function App() {
     "Paris",
   ];
 
+  const destinationPaths = popularDestinations.map(destination =>
+    destination.replace(/\s+/g, '-').replace(/[^\w-']/g, '').toLowerCase()
+  );
+  
+
+  const destinationsData = {
+    'antibes': antibesData,
+    'bordeaux': bordeauxData,
+    'cannes': cannesData,
+    'arcachon': arcachonData,
+    'chamonix-mont-blanc': chamonixData,
+    'les-menuires': lesMenuiresData,
+    'lyon': lyonData,
+    'marseille': marseilleData,
+    'nice': niceData,
+    'paris': parisData,
+  };
+
   return (
     <Router>
       <div>
@@ -26,11 +55,11 @@ export default function App() {
         <Routes>
           <Route path="/" element={<MainSection />} />
 
-          {popularDestinations.map((destination) => (
+          {popularDestinations.map((destination, index) => (
             <Route
               key={destination}
-              path={`/${destination.toLowerCase()}`}
-              element={<DestinationPage destinationData={destination.toLowerCase()} />}
+              path={`/${destinationPaths[index]}`}
+              element={<DestinationPage destinationData={destinationsData[destinationPaths[index]]} />} // Pass the data directly
             />
           ))}
         </Routes>
@@ -39,42 +68,14 @@ export default function App() {
     </Router>
   );
 }
-function DestinationPage({ destinationData }) {
-  const [data, setData] = useState([]);
- 
-  useEffect(() => {
-    import(`./destinations/${destinationData}.js`)
-      .then((module) => {
-        setData(module.default);
-      })
-      .catch((error) => {
-        console.error('Error loading destination data:', error);
-      });
-  }, [destinationData]);
 
+
+function DestinationPage({ destinationData }) {
   return (
     <section className="bg-[#f5f5f5] text-slate-900 py-16">
       <div className="container mx-auto text-center">
-        {data.map((place, index) => (
-          <div key={index} className="my-8">
-            <img
-              src={place.imageUrl}
-              alt={place.title}
-              className="w-full h-48 object-cover rounded-md mb-2"
-            />
-            <h4 className="text-xl font-semibold mb-1">{place.title}</h4>
-            <p className="text-gray-600 mb-1">{place.location}</p>
-            <p className="text-yellow-500 mb-1">Rating: {place.rating}</p>
-            <p className="mb-1">{place.price}</p>
-            <a
-              href={place.bookingLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-indigo-600 hover:underline"
-            >
-              Visit Booking.com
-            </a>
-          </div>
+        {destinationData.map((place, index) => (
+          <PlaceCard key={index} place={place} />
         ))}
       </div>
     </section>
