@@ -94,27 +94,38 @@ const Footer = () => {
         </svg>
       </button>
       
-      {/* Twitter and GitHub Links */}
-      <div className="flex justify-center mt-4">
+      {/* Main Email */}
+      <p className="text-lg font-semibold mb-4">
+        For inquiries, please contact us at:
+        <br />
+        <a href="mailto:mariealicetravel@mail.com" className="text-indigo-600 hover:underline">
+          mariealicetravel@mail.com
+        </a>
+      </p>
+
+      {/* Dev Links */}
+      <p className="text-sm mb-2 text-center text-slate-600">website developed by</p>
+      <div className="flex justify-center mt-2">
         <a
           href="https://twitter.com/jeanmax1me"
           target="_blank"
           rel="noopener noreferrer"
           className="mr-4"
         >
-          <img src="TwitterIcon.webp" className="w-6 h-6 text-white hover:text-indigo-600 transition duration-300" />
+          <img src="TwitterIcon.webp" className="w-6 h-6 text-white hover:text-indigo-600 transition duration-300" alt="Twitter" />
         </a>
         <a
           href="https://github.com/jeanmax1me"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="public/GitHubIcon.png" className="w-6 h-6 text-white hover:text-indigo-600 transition duration-300" />
+          <img src="public/GitHubIcon.png" className="w-6 h-6 text-white hover:text-indigo-600 transition duration-300" alt="GitHub" />
         </a>
       </div>
     </div>
   </div>
 )}
+
     </footer>
   );
 };
