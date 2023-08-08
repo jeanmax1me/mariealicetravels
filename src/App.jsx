@@ -4,6 +4,7 @@ import MainSection from './components/MainSection';
 import Footer from './components/Footer';
 import PlaceCard from './components/MyPlaceCard';
 import RedirectToBookingPage from './components/RedirectToBookingPage';
+import redirects from './components/redirects.json';
 
 
 import antibesData from './destinations/antibes';
@@ -64,8 +65,14 @@ export default function App() {
               element={<DestinationPage destinationData={destinationsData[destinationPaths[index]]} />} // Pass the data directly
             />
           ))}
-        <Route path="/sunshine13" element={<RedirectToBookingPage propertyId="sunshine13" />} />
-      <Route path="/cannesfelixfaure" element={<RedirectToBookingPage propertyId="cannesfelixfaure" />} />
+       {/* Dynamic routes */}
+       {Object.keys(redirects).map((propertyId) => (
+            <Route
+              key={propertyId}
+              path={`/${propertyId}`}
+              element={<RedirectToBookingPage propertyId={propertyId} />}
+            />
+            ))}
         </Routes>
         <Footer />
       </div>
