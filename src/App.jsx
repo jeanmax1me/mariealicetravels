@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import MainSection from './components/MainSection';
 import Footer from './components/Footer';
-import PlaceCard from './components/PlaceCard';
+import PlaceCard from './components/MyPlaceCard';
 import RedirectToBookingPage from './components/RedirectToBookingPage';
 
 
