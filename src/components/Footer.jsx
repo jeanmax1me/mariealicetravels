@@ -119,7 +119,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="public/GitHubIcon.png" className="w-6 h-6 text-white hover:text-indigo-600 transition duration-300" alt="GitHub" />
+          <img src="GitHubIcon.png" className="w-6 h-6 text-white hover:text-indigo-600 transition duration-300" alt="GitHub" />
         </a>
       </div>
     </div>
