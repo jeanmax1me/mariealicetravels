@@ -64,7 +64,8 @@ export default function App() {
               element={<DestinationPage destinationData={destinationsData[destinationPaths[index]]} />} // Pass the data directly
             />
           ))}
-          <Route path="/:propertyId" element={<RedirectToBookingPage />} /> {/* New dynamic route */}
+        <Route path="/sunshine13" element={<RedirectToBookingPage propertyId="sunshine13" />} />
+      <Route path="/cannesfelixfaure" element={<RedirectToBookingPage propertyId="cannesfelixfaure" />} />
         </Routes>
         <Footer />
       </div>
