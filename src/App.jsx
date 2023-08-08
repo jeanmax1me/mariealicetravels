@@ -3,6 +3,8 @@ import Header from './components/Header';
 import MainSection from './components/MainSection';
 import Footer from './components/Footer';
 import PlaceCard from './components/PlaceCard';
+import RedirectToBookingPage from './components/RedirectToBookingPage';
+
 
 import antibesData from './destinations/antibes';
 import bordeauxData from './destinations/bordeaux';
@@ -62,6 +64,7 @@ export default function App() {
               element={<DestinationPage destinationData={destinationsData[destinationPaths[index]]} />} // Pass the data directly
             />
           ))}
+          <Route path="/:propertyId" element={<RedirectToBookingPage />} /> {/* New dynamic route */}
         </Routes>
         <Footer />
       </div>

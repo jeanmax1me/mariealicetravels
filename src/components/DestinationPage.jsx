@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom'; // Import useParams
-import PlaceCard from './PlaceCard'; // Import the PlaceCard component
+import PlaceCard from './PlaceCard';
 import antibesData from './destinations/antibes'; // Import data for Antibes
 
 export default function DestinationPage() {
