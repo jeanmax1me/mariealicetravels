@@ -4,14 +4,17 @@ import redirects from './redirects.json'; // Import the JSON configuration
 
 export default function RedirectToBookingPage() {
   const { propertyId } = useParams(); // Get the property ID from the URL parameter
-
   useEffect(() => {
     if (propertyId && redirects[propertyId]) {
-      // Redirect to the Booking.com URL from the configuration
-      window.location.href = redirects[propertyId];
+      // Asynchronously redirect to the Booking.com URL from the configuration
+      setTimeout(() => {
+        window.location.replace(redirects[propertyId]);
+      }, 0);
     } else {
-      // Handle cases where the property ID is not found
-      console.error(`Property ID "${propertyId}" not found in redirects configuration.`);
+      // Redirect to Booking.com main page with your affiliate ID
+      setTimeout(() => {
+        window.location.replace(`https://www.booking.com/index.html?aid=8066595`);
+      }, 0);
     }
   }, [propertyId]);
 
