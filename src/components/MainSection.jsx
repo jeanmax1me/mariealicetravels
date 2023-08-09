@@ -32,7 +32,7 @@ export default function MainSection() {
             <Link
               key={destination}
               to={`/${destination.replace(/\s+/g, '-').replace(/[^\w-']/g, '').toLowerCase()}`} // Generate the path
-              className="bg-white text-slate-900 py-3 px-6 rounded-md hover:bg-indigo-600 hover:text-white transition duration-300"
+              className="bg-white text-slate-900 py-3 px-6 rounded-md hover:bg-teal-800 hover:text-white transition duration-200"
             >
               {destination}
             </Link>

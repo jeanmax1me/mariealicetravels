@@ -13,7 +13,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-slate-900 text-white py-4">
+    <footer className="bg-white text-black py-4">
       <div className="container mx-auto flex justify-between items-center">
         <p className="text-sm">
           © MarieAliceTravels 2023. All rights reserved.
@@ -21,19 +21,19 @@ const Footer = () => {
         <div className="flex space-x-4">
           <button
             onClick={() => setShowPrivacyPopup(true)}
-            className="text-sm hover:text-indigo-600 transition duration-300"
+            className="text-sm hover:text-teal-800 transition duration-300"
           >
             Privacy Policy
           </button>
           <button
             onClick={() => setShowCookiesPopup(true)}
-            className="text-sm hover:text-indigo-600 transition duration-300"
+            className="text-sm hover:text-teal-800 transition duration-300"
           >
             Cookies
           </button>
           <button
             onClick={() => setShowContactPopup(true)}
-            className="text-sm hover:text-indigo-600 transition duration-300"
+            className="text-sm hover:text-teal-800 transition duration-300"
           >
             Contact
           </button>

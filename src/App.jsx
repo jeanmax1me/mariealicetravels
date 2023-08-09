@@ -17,6 +17,7 @@ import lyonData from './destinations/lyon';
 import marseilleData from './destinations/marseille';
 import niceData from './destinations/nice';
 import parisData from './destinations/paris';
+import BookingWidget from './components/BookingWidget';
 
 
 export default function App() {
@@ -55,6 +56,7 @@ export default function App() {
     <Router>
       <div>
         <Header />
+        <BookingWidget />
         <Routes>
           <Route path="/" element={<MainSection />} />
 
