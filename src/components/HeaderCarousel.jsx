@@ -33,7 +33,7 @@ const HeaderCarousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentThemeIndex((prevIndex) => (prevIndex + 1) % headerThemes.length);
-    }, 6000);
+    }, 4000);
 
     return () => clearInterval(interval);
   }, []);
