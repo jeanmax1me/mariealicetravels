@@ -23,7 +23,7 @@ if (indexOfHtml !== -1) {
   const jsonString = JSON.stringify(jsonObject, null, 2);
 
   // Write the JSON string to test.json
-  fs.writeFileSync('test.json', jsonString);
+  fs.writeFileSync('aaaaaaaaa.json', jsonString);
 
   console.log("JSON Object:", jsonObject);
   console.log("https://mariealicetravels.vercel.app/" + generatedUuid);
