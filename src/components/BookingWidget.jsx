@@ -42,7 +42,7 @@ export default function BookingWidget() {
         height: '544px'
       }}
       >
-        <div className="grid h-screen place-items-center">
+        <div className="grid h-screen place-items-center max-h-[544px]">
           <div className="min-h-[350px]"
       id="bookingAffiliateWidget_2f05011e-3f32-432f-b0ff-7ba9ad66cc66"></div>
         </div>

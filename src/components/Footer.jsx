@@ -13,7 +13,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-white text-black py-4">
+    <footer className="bg-white text-black py-6 max-h-8">
       <div className="container mx-auto flex justify-between items-center">
         <p className="text-sm">
           © MarieAliceTravels 2023. All rights reserved.
