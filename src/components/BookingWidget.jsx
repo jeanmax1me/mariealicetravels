@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 
 export default function BookingWidget() {
-useEffect(() => {
+  useEffect(() => {
     console.log('Header useEffect triggered'); // Log when useEffect is triggered
 
     // Create a script element
@@ -34,6 +34,18 @@ useEffect(() => {
   console.log('Header component rendered');
 
   return (
-      <div className="min-h-[350px] lg:mx-64" id="bookingAffiliateWidget_2f05011e-3f32-432f-b0ff-7ba9ad66cc66">&nbsp;</div>
+    <div
+      style={{
+        backgroundImage: 'url("bgmid.jpg")', // Replace with your image URL
+        backgroundSize: 'cover', // Adjust as needed
+        width: '100%',
+        height: '544px'
+      }}
+      >
+        <div className="grid h-screen place-items-center">
+          <div className="min-h-[350px]"
+      id="bookingAffiliateWidget_2f05011e-3f32-432f-b0ff-7ba9ad66cc66"></div>
+        </div>
+    </div>
   );
 }
