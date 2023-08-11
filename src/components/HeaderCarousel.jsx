@@ -43,7 +43,7 @@ const HeaderCarousel = () => {
   return (
     <div className={`font-mts bg-gradient-to-r ${currentTheme.gradient} relative`}>
       <div className="container mx-auto text-white py-14">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6">{currentTheme.title}</h1>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-8">{currentTheme.title}</h1>
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4">{currentTheme.subtitle}</h2>
           <h3 className="text-xl md:text-2xl lg:text-3xl">{currentTheme.description}</h3>
