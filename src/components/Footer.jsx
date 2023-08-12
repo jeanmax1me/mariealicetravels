@@ -107,19 +107,12 @@ const Footer = () => {
       <p className="text-sm mb-2 text-center text-slate-600">website developed by</p>
       <div className="flex justify-center mt-2">
         <a
-          href="https://twitter.com/jeanmax1me"
+          href="https://twitter.com/ArteFlannigan"
           target="_blank"
           rel="noopener noreferrer"
           className="mr-4"
         >
           <img src="TwitterIcon.webp" className="w-6 h-6 text-white hover:text-indigo-600 transition duration-300" alt="Twitter" />
-        </a>
-        <a
-          href="https://github.com/jeanmax1me"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="GitHubIcon.png" className="w-6 h-6 text-white hover:text-indigo-600 transition duration-300" alt="GitHub" />
         </a>
       </div>
     </div>
