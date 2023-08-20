@@ -24,8 +24,10 @@ Marie Alice Travels is a web application that provides information about popular
 ## Results after 2 weeks 
 
 93 unique visitors, 2800 page views, 0 booking. Even if the sample size is ridiculous I think it's fair to say that the conversion rate of this type of affiliate product must be really low, especially on Booking.com as they don't use cookies and the visitor has to do the booking directly in the same session to be attributed the affiliate sale. 
-I'm not interested working more on the site right now, but I thought about different strategies to do it. Including trying to do sneaky advertising, building an army of backlinks by creating blogs or connecting with other travel industry websites, or more code-oriented ameliorating the SEO and accessibility of the site. 
-All of this is possible and could lead to more visitors, more page views, and probably some bookings at some point. 
+
+I'm not interested in working more on the site right now, but I thought about different strategies to do it. Including trying to do sneaky advertising, building an army of backlinks by creating blogs or connecting with other travel industry websites to improve SEO. 
+
+All of this could lead to more visitors, more page views, and probably some bookings at some point. 
 It was a very interesting first step into the world of affiliate marketing anyway. 
 
 ![17db40ff2ea5240a44d225328d8208e0](https://github.com/jeanmax1me/mariealicetravels/assets/68813864/075f071b-ed60-4fab-a25c-3aa6f897b821)
