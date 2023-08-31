@@ -32,6 +32,6 @@ It was a very interesting first step into the world of affiliate marketing anywa
 
 ![17db40ff2ea5240a44d225328d8208e0](https://github.com/jeanmax1me/mariealicetravels/assets/68813864/075f071b-ed60-4fab-a25c-3aa6f897b821)
 
-Update: We got our first booking ! For 134.59€ Commission, that's pretty good. So I can now say that this website is/was a sucess, we have managed to make some money out of nothing, just by coding. Let's go conquer the world now!
+Update: We got our first booking ! For 134.59€ Commission, that's pretty good. So I can now say that this website is a success, we have managed to make some money out of nothing, just by coding. Let's go conquer the world now!
 ![beb30eac13e91a223fdeae5eeacbc8ff](https://github.com/jeanmax1me/mariealicetravels/assets/68813864/e9730dc9-6780-4de1-8508-445c0368935e)
 
