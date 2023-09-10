@@ -107,7 +107,7 @@ const Footer = () => {
       <p className="text-sm mb-2 text-center text-slate-600">website developed by</p>
       <div className="flex justify-center mt-2">
         <a
-          href="https://twitter.com/ArteFlannigan"
+          href="https://twitter.com/jeanmax1me"
           target="_blank"
           rel="noopener noreferrer"
           className="mr-4"

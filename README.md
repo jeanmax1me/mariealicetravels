@@ -1,8 +1,7 @@
 # Marie Alice Travels
 
-Welcome to Marie Alice Travels, a project that explores the Booking.com API and its affiliate program to showcase travel destinations and accommodations.
+Welcome to Marie Alice Travels, a project that aimed to try the Booking.com affiliate program.
 
-![App Screenshot](public/logo2.png)
 
 ## Overview
 
@@ -21,3 +20,18 @@ Marie Alice Travels is a web application that provides information about popular
 - Tailwind CSS: A utility-first CSS framework for styling the user interface.
 - Booking.com API: Interact with the Booking.com API to fetch travel data.
 - Git: Version control and collaboration tool.
+
+## Results after 2 weeks 
+
+93 unique visitors, 2800 page views, 0 booking. Even if the sample size is ridiculous I think it's fair to say that the conversion rate of this type of affiliate product must be really low, especially on Booking.com as they don't use cookies and the visitor has to do the booking directly in the same session to be attributed the affiliate sale. 
+
+I'm not interested in working more on the site right now, but I thought about different strategies to do it. Including trying to do sneaky advertising, building an army of backlinks by creating blogs or connecting with other travel industry websites to improve SEO. 
+
+All of this could lead to more visitors, more page views, and probably some bookings at some point. 
+It was a very interesting first step into the world of affiliate marketing anyway. 
+
+![17db40ff2ea5240a44d225328d8208e0](https://github.com/jeanmax1me/mariealicetravels/assets/68813864/075f071b-ed60-4fab-a25c-3aa6f897b821)
+
+Update: We got our first booking ! For 134.59€ Commission, that's pretty good. So I can now say that this website is a success, we have managed to make some money out of nothing, just by coding. Let's go conquer the world now!
+![beb30eac13e91a223fdeae5eeacbc8ff](https://github.com/jeanmax1me/mariealicetravels/assets/68813864/e9730dc9-6780-4de1-8508-445c0368935e)
+
