@@ -10,7 +10,7 @@ export default function BookingWidget() {
         backgroundSize: 'cover', // Adjust as needed
         width: '100%',
         overflow: 'hidden',
-        height: '650px'
+        height: '553px'
       }}
       >
     </div>
