@@ -13,17 +13,9 @@ export default function App() {
     <Router>
       <div className="max-h-screen">
         <Header />
-        <BookingWidget />
+       <BookingWidget />
         <Routes>
-    {/*      <Route path="/" element={<MainSection />} />
 
-          {popularDestinations.map((destination, index) => (
-            <Route
-              key={destination}
-              path={`/${destinationPaths[index]}`}
-              element={<DestinationPage destinationData={destinationsData[destinationPaths[index]]} />} // Pass the data directly
-            />
-          ))} */}
       
        {Object.keys(redirects).map((propertyId) => (
             <Route
